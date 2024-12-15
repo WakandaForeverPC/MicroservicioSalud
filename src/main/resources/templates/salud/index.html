@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud y Bienestar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <h1>Servicios de Salud y Bienestar</h1>
 
+    <div class="service">
+        <h2>Consulta de Telemedicina</h2>
+        <button id="telemedicinaButton">Iniciar Consulta</button>
+        <p id="telemedicinaResponse"></p>
+    </div>
+
+    <div class="service">
+        <h2>Monitoreo de Salud</h2>
+        <input type="text" id="monitoreoData" placeholder="Ingrese datos de monitoreo (e.g. presión arterial)">
+        <button id="monitoreoButton">Enviar Datos</button>
+        <p id="monitoreoResponse"></p>
+    </div>
+
+    <div class="service">
+        <h2>Centros de Salud Conectados</h2>
+        <button id="centrosButton">Ver Centros</button>
+        <p id="centrosResponse"></p>
+    </div>
+
+    <div class="service">
+        <h2>Crear Nuevo Registro de Salud</h2>
+        <input type="text" id="tipoConsulta" placeholder="Tipo de consulta (e.g. Telemedicina)">
+        <input type="text" id="datosMonitoreo" placeholder="Datos de monitoreo (e.g. presión arterial)">
+        <input type="text" id="centroSalud" placeholder="Centro de salud (e.g. Hospital Central)">
+        <button id="crearSaludButton">Crear Registro</button>
+        <p id="crearSaludResponse"></p>
+    </div>
+
+    <div class="service">
+        <h2>Obtener Todos los Registros de Salud</h2>
+        <button id="registrosButton">Ver Registros</button>
+        <p id="registrosResponse"></p>
+    </div>
+
+    <div class="service">
+        <h2>Obtener Registro por Tipo de Consulta</h2>
+        <input type="text" id="tipoConsultaRegistro" placeholder="Tipo de consulta (e.g. Telemedicina)">
+        <button id="registroButton">Ver Registro</button>
+        <p id="registroResponse"></p>
+    </div>
+
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
