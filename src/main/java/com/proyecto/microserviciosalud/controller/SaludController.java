@@ -18,7 +18,7 @@ public class SaludController {
     private PatientService patientService;
 
     @GetMapping("/salud")
-    public String showEmergencies() {
+    public String showSalud() {
         return "board-salud";
     }
 
